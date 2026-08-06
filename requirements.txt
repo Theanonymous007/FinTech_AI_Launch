@@ -6,3 +6,4 @@ numpy
 rapidocr==3.9.2
 onnxruntime==1.28.0
 pypdfium2
+reportlab==5.0.0
