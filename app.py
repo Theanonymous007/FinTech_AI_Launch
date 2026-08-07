@@ -63,8 +63,10 @@ st.sidebar.caption(
 )
 
 render_app_hero()
+if page == "📤 AI Invoice Capture":
+    render_upload_page()
 
-if page == "📊 Dashboard":
+elif page == "📊 Dashboard":
     render_dashboard()
 
 elif page == "🤖 Financial Advisor":
@@ -78,9 +80,6 @@ elif page == "🚨 Fraud & Risk Centre":
 
 elif page == "📄 Executive Report":
     render_report_page()
-
-elif page == "📤 AI Invoice Capture":
-    render_upload_page()
 
 elif page == "🧾 Invoice Records":
     render_invoice_records()
