@@ -63,9 +63,10 @@ st.sidebar.caption(
 )
 
 render_app_hero()
-if page == "📤 AI Invoice Capture":
-    render_upload_page()
 
+if page == "📷 AI Invoice Capture":
+    render_upload_page()
+    
 elif page == "📊 Dashboard":
     render_dashboard()
 
