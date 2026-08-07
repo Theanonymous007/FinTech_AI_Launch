@@ -37,12 +37,12 @@ st.sidebar.markdown("### Workspace")
 page = st.sidebar.radio(
     "Select module",
     [
+        "📷 AI Invoice Capture",
         "📊 Dashboard",
         "🤖 Financial Advisor",
         "💬 Ask FinTech AI",
         "🚨 Fraud & Risk Centre",
         "📄 Executive Report",
-        "📤 AI Invoice Capture",
         "🧾 Invoice Records",
         "🧠 Vendor Memory",
         "🧪 Demo Data",
@@ -64,7 +64,10 @@ st.sidebar.caption(
 
 render_app_hero()
 
-if page == "📊 Dashboard":
+if page == "📷 AI Invoice Capture":
+    render_upload_page()
+    
+elif page == "📊 Dashboard":
     render_dashboard()
 
 elif page == "🤖 Financial Advisor":
@@ -78,9 +81,6 @@ elif page == "🚨 Fraud & Risk Centre":
 
 elif page == "📄 Executive Report":
     render_report_page()
-
-elif page == "📤 AI Invoice Capture":
-    render_upload_page()
 
 elif page == "🧾 Invoice Records":
     render_invoice_records()
