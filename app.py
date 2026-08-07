@@ -37,7 +37,7 @@ st.sidebar.markdown("### Workspace")
 page = st.sidebar.radio(
     "Select module",
     [
-        "📤 AI Invoice Capture",
+        "📷 AI Invoice Capture",
         "📊 Dashboard",
         "🤖 Financial Advisor",
         "💬 Ask FinTech AI",
