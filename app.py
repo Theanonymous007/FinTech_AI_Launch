@@ -1,4 +1,23 @@
 import streamlit as st
+# TEMPORARY OCR DEBUG
+try:
+    import rapidocr
+    from rapidocr import RapidOCR
+
+    st.sidebar.success("✅ RapidOCR import OK")
+
+    try:
+        _ocr_debug_engine = RapidOCR()
+        st.sidebar.success("✅ RapidOCR engine initialized")
+    except Exception as exc:
+        st.sidebar.error(
+            f"❌ OCR INIT ERROR: {type(exc).__name__}: {exc}"
+        )
+
+except Exception as exc:
+    st.sidebar.error(
+        f"❌ OCR IMPORT ERROR: {type(exc).__name__}: {exc}"
+    )
 
 from advisor import render_financial_advisor
 from ask_ai import render_ask_fintech_ai
