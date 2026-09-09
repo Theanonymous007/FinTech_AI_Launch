@@ -1,0 +1,14 @@
+FINTECH AI UI EXPERIENCE V3.3
+
+THEME CONTRAST FIX
+- Light mode now uses dark text on all page, card, form, table and chart surfaces.
+- Dark mode now uses light text on dark page, card, form, table and chart surfaces.
+- KPI cards, status banners, upload controls, invoice fields, expanders and chat now follow the selected mode.
+- Plotly chart backgrounds, labels, legends, axes, hover labels and donut separators follow the selected mode.
+- Dropdown menus, radio buttons, checkboxes, tabs and placeholders receive theme-aware text colors.
+- The existing HTML rendering fix remains intact.
+
+APPLY AS HOTFIX
+Replace app.py, theme.py, ui_components.py and .streamlit/config.toml.
+Keep venv, database and uploads.
+Restart the app and hard refresh the browser with Ctrl+Shift+R.

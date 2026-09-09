@@ -1,0 +1,7 @@
+1. Stop Streamlit with Ctrl+C.
+2. Extract the V3.3 hotfix.
+3. Replace app.py, theme.py, ui_components.py and .streamlit/config.toml in your current project folder.
+4. Do not replace venv, database or uploads.
+5. Run run_app.bat.
+6. Press Ctrl+Shift+R in the browser.
+7. Toggle Light mode in the sidebar to verify the contrast change.
